@@ -35,6 +35,7 @@ Validate the HTML code.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
 HOME.html
 <!DOCTYPE html>
 <html lang="en">
@@ -80,6 +81,7 @@ HOME.html
     </div>
   </body>
 </html>
+
 PRODUCT.html
 !DOCTYPE html>
 <html lang="en">
@@ -206,6 +208,7 @@ PRODUCT.html
   </div>
  </body>
 </html>
+
 PEPOPLE.html
 <!DOCTYPE html>
 <html lang="en">
@@ -273,16 +276,42 @@ PEPOPLE.html
   </body>
 </html>
 
+CONTACTUS.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    </title>MICROSOFT PRODUCT</title>
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="icon" href="./img/icon2.png" type="image/x-icon" />
+  </head>
 
-## OUTPUT:
+  <body>
+    <div class="container">
+      <div class="banner">MICROSOFT PRODUCT</div>
+      <div class="menu">
+        <div class="menuitem"><a href="/static/home.html">Home</a></div>
+        <div class="menuitem"><a href="/static/products.html">Products</a></div>  
+        <div class="menuitem"><a href="/static/people.html">People</a></div>
+        <div class="menuitemselected"><a href="/static/contact us.html">Contact Us</a></div>
+      </div>
+      
+        <div class="contact content">
+           <h1>Our Contact Address</h1>  
+        
+          <div class="contacttext">
+           Phone:6592001799
+           <br>Eamail-address:sharmi@gmail.com
+          </div>
+        </div>
 
-### Home Page:
+     
+<div class="footer">
+  Copyright &#169; 2021 MICROSOFT PRODUT, Developed by Sharmila
+</div>
+</div>
+</body>
+</html>
 
-![output](./images/homepage.jpg)
-
-## Result:
-
-Thus a website is designed for the software product company and the HTML,CSS code are validated.
 LAYOUT.css
  {
   box-sizing: border-box;
@@ -421,252 +450,7 @@ body {
   margin: 0px 0px 0px 0px;
   color: #9c1018;
 }
-layout.css:
-
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body {
-  background-color: whitesmoke;
-  color: #17421d;
-}
-.container {
-  width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
-  border-width: 1px 1px 1px 1px;
-  border-style: solid;
-  box-shadow: 15px 15px 8px gray;
-}
-
-.banner {
-  display: block;
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  font-size: 60px;
-  background-image: url("/static/img/BAC.jpg");
-  background-size: 100% 100%;
-  margin: 0px 0px 0px 0px;
-  padding-top: 150px;
-  color: black;
-}
-
-.menu {
-  display: block;
-  width: 100%;
-  height: 50px;
-  font-size: larger;
-  background-color:black;
-  text-align: center;
-  padding-top: 15px;
-  margin: 0px 0px 0px 0px;
-  border-width: 1px;
-}
-
-.menuitem {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.menuitemselected {
-  display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
-  color:rgb(114, 14, 114);
-}
-
-.menuitem a {
-  text-decoration: none;
-  color: #9c1018;
-}
-
-.content {
-  display: block;
-  width: 100%;
-  background-color:white;
-  min-height: 500px;
-  margin: 0px 0px 0px 0px;
-  border-width: 1px;
-  border-color: white;
-  border-style: solid;
-}
-.homecontent {
-  min-height: 500px;
-  margin: 10px 10px 10px 10px;
-}
-.homecontent h1 {
-  text-align: left;
-}
-.homecontent img {
-  float: right;
-  width: 400px;
-  height: 300px;
-  margin-left: 10px;
-}
-
-.contenttext {
-  text-align: justify;
-}
-
-.productcontent {
-  min-height: 500px;
-  margin: 10px 10px 10px 10px;
-}
-
-.productcontent h1 {
-  text-align: left;
-}
-
-.productitems {
-  display: block;
-}
-
-.productitem {
-  display: inline-block;
-  width: 30%;
-  height: 250px;
-  text-align: center;
-}
-
-.productitem img {
-  width: 100px;
-  height: 100px;
-  display: block;
-}
-.productitem .itemimage {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100px;
-  margin-bottom: 5px;
-}
-
-.productitem .itemname {
-  display: block;
-}
-.productitem .itemprice {
-  display: block; 
-}
-
-.footer {
-  display: inline-block;
-  width: 100%;
-  height: 40px;
-  background-color:black
-  text-align: center;
-  padding-top: 10px;
-  margin: 0px 0px 0px 0px;
-  color: #9c1018;
-}
-
-.contact content{
-  display: block;
-  width: 100%;
-  background-color:white;
-  min-height: 500px;
-  margin: 0px 0px 0px 0px;
-  border-width: 1px;
-  border-color: white;
-  border-style: solid;
-}
-.contacttext{
-  text-align: justify;
-  font-style: normal;
-  font-size: larger;
-}
-.people content{
-  display: block;
-  width: 100%;
-  background-color:white;
-  min-height: 500px;
-  margin: 0px 0px 0px 0px;
-  border-width: 1px;
-  border-color: white;
-  border-style: solid;
-}
-HOME.html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>MICROSOFT PRODUCT</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/IC1.jpg" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">MICROSOFT PRODUCT</div>
-      <div class="menu">
-        <div class="menuitemselected"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitem"><a href="/static/contact us.html">Contact Us</a></div>
-      </div>
-      <div class="content">
-        <div class="homecontent">
-          <h1>About Us</h1>
-          <img src="./img/i1.png" alt="Image" />
-          <div class="contenttext">
-            Welcome to MICROSOFT PRODUCT!
-            It is best known for its Windows operating system, the Microsoft Office family of productivity software plus services,
-             and the Visual Studio IDE. The company also publishes books (through Microsoft Press) and video games
-              (through Xbox Game Studios), and produces its own line of hardware.
-            <br>
-          
-              From top-left: Outlook, OneDrive, Word, Excel, PowerPoint, OneNote, SharePoint, Teams, and Yammer 
-               Proprietary software: Windows 10 Mobile and Windows Phone: Built-in.
-            <ul>
-              <li> easier to use</li>
-              <li>affordable price</li>
-              <li>Anywhere, anytime access</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        Copyright &#169; 2021 MICROSOFT PRODUCT, Developed by Sharmila
-      </div>
-    </div>
-  </body>
-</html>
-CONTACTUS.html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    </title>MICROSOFT PRODUCT</title>
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="icon" href="./img/icon2.png" type="image/x-icon" />
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="banner">MICROSOFT PRODUCT</div>
-      <div class="menu">
-        <div class="menuitem"><a href="/static/home.html">Home</a></div>
-        <div class="menuitem"><a href="/static/products.html">Products</a></div>  
-        <div class="menuitem"><a href="/static/people.html">People</a></div>
-        <div class="menuitemselected"><a href="/static/contact us.html">Contact Us</a></div>
-      </div>
-      
-        <div class="contact content">
-           <h1>Our Contact Address</h1>  
-        
-          <div class="contacttext">
-           Phone:6592001799
-           <br>Eamail-address:sharmi@gmail.com
-          </div>
-        </div>
-
-     
-<div class="footer">
-  Copyright &#169; 2021 MICROSOFT PRODUT, Developed by Sharmila
-</div>
-</div>
-</body>
-</html>
-
+```
 ## output:
 
 ### HOME PAGE:
